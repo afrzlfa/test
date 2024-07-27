@@ -1,0 +1,10 @@
+version: '1'
+services:
+    snake:
+        image: 'afrzlfa/test:new'
+        enviroment:
+            - "PORT:3000"
+        ports:
+            - "80:3000"
+        volumes:
+            - ./:/var/www/html
